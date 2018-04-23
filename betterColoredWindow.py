@@ -11,7 +11,7 @@ blue = Color(0x0000ff, 1)
 Colors = [red,yellow,green,blue]
 
 def mouseClick(event):
-    randnum = randint(1,4)
+    randnum = randint(0,3)
     line = LineStyle(3,Colors[randnum])
     rectangle = RectangleAsset(100,100,line,Colors[randnum])
   
