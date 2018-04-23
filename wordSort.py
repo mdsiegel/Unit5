@@ -3,8 +3,8 @@
 #wordSort.py - Sorting List
 
 words = input('Enter some words: ').split(' ')
-L = ['']
-for word in words:
-    L.append(word)
-    
+
+
+print(words.sort())
+
     
