@@ -17,4 +17,9 @@ for i in range(0,len(L)):
         max = L[i]
 print(max)
 
+min = 100
+for i in range(0,len(L)):
+    if L[i]<min:
+        min = L[i]
+print(min)
 
