@@ -11,4 +11,10 @@ for i in range(0,len(L)):
     count+=L[i]
 print(count)
 
+max = 0
+for i in range(0,len(L)):
+    if L[i]>max:
+        max = L[i]
+print(max)
+
 
