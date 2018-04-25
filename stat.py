@@ -6,6 +6,10 @@ L = []
 noQ = True
 print('Enter a list of numbers and enter q when finished')
 while noQ == True:
-    
+    userInput = input('>')
+    if userInput == 'q':
+        noQ = False
+    else:
+        L.append(int(userInput))
     
     
