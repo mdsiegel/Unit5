@@ -12,6 +12,6 @@ weekDayNum = today.weekday()
 
 weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 months = ['January','February','March','April','May','June','July','August','September','October','November','December']
-print('Today is',weekdays[weekDayNum],',',months[monthNum-1],day,yearNum)
+print('Today is',weekdays[weekDayNum+1],',',months[monthNum-1],day,yearNum)
 
 
