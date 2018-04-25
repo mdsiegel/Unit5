@@ -11,5 +11,7 @@ while noQ == True:
         noQ = False
     else:
         L.append(int(userInput))
+
+print('Min: ',min(L))
     
     
