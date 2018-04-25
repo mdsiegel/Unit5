@@ -10,8 +10,9 @@ while noQ == True:
     if userInput == 'q':
         noQ = False
     else:
-        L.append(int(userInput))
+        L.append(float(userInput))
 
 print('Min: ',min(L))
-    
-    
+print('Max: ',max(L))
+print('Mean: ',sum(L)/len(L))
+
