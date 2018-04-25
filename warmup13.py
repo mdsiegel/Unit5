@@ -6,7 +6,9 @@ from random import randint
 L = []
 for i in range(0,20):
     L.append(randint(1,100))
-    
-    
+count = 0
+for i in range(0,len(L)):
+    count+=L[i]
+print(count)
 
 
