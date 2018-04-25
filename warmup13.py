@@ -3,8 +3,10 @@
 #warmup13.py-list of random nums
 from random import randint
 
-list = []
-for i in range[0,20]:
-    list.append(randint(1,100))
+L = []
+for i in range(0,20):
+    L.append(randint(1,100))
+    
+    
 
 
