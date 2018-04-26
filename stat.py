@@ -12,6 +12,7 @@ while noQ == True:
     else:
         L.append(float(userInput))
 
+L.sort()
 print('Min: ',min(L))
 print('Max: ',max(L))
 print('Mean: ',sum(L)/len(L))
@@ -25,10 +26,10 @@ print('Mode:',mostNumberValue)
 if len(L)%2 == 0:
     median1 = L[len(L)/2]
     median2 = L[(len(L)/2)-1]
-    print(median2)
-    print(median1)
+    print('median:',median2)
+    print('median:',median1)
 else:
     median1 = L[(len(L)/2)-.5]
-    print(median1)
+    print('median:',median1)
 
 
