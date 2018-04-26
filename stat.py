@@ -15,4 +15,12 @@ while noQ == True:
 print('Min: ',min(L))
 print('Max: ',max(L))
 print('Mean: ',sum(L)/len(L))
+mostNum = 0
+mostNumberValue = 0
+for l in L:
+    if L.count(l) > mostNum:
+        mostNum = L.count(l)
+        mostNumberValue = l
+print('Mode:',mostNumberValue)
+    
 
