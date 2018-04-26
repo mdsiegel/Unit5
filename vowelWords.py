@@ -4,5 +4,5 @@
 
 words = input('Enter some words: ').split()
 for word in words:
-    if word[0] in 'aeioyAEIOY':
+    if word[0] in 'aeiouyAEIOUY':
         print(word)
