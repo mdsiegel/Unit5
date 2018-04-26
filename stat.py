@@ -27,5 +27,8 @@ if len(L)%2 == 0:
     median2 = L[(len(L)/2)-1]
     print(median2)
     print(median1)
+else:
+    median1 = L[(len(L)/2)-.5]
+    print(median1)
 
 
