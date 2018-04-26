@@ -22,5 +22,10 @@ for l in L:
         mostNum = L.count(l)
         mostNumberValue = l
 print('Mode:',mostNumberValue)
-    
+if len(L)%2 == 0:
+    median1 = L[len(L)/2]
+    median2 = L[(len(L)/2)-1]
+    print(median2)
+    print(median1)
+
 
