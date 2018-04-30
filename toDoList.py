@@ -8,11 +8,11 @@ Quit = False
 L = []
 while Quit == False:
     text = input('>')
-    if text[0] == 'add':
-        L.append(text[1:len(text)])
-    if text[0] == 'delete':
-        L.remove(text[1:len(text)])
-    if text[0] == 'print':
+    if text[0:3] == 'add':
+        L.append(text[3:len(text)])
+    if text[0:6] == 'delete':
+        L.remove(text[6:len(text)])
+    if text[0:5] == 'print':
         print(L)
-    if text[0] == 'quit':
+    if text[0:4] == 'quit':
         Quit = True
