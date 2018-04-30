@@ -13,6 +13,7 @@ while Quit == False:
     if text[0:6] == 'delete':
         L.remove(text[6:len(text)])
     if text[0:5] == 'print':
-        print(L)
+        for l in L:
+            print(l)
     if text[0:4] == 'quit':
         Quit = True
