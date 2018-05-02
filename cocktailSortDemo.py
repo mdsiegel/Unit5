@@ -2,7 +2,6 @@
 #5/2/18
 #cocktailSortDemo.py - making a cocktail sort
 
-#sortingTemplate.py - times a sorting function
 
 from random import randint
 from time import time
@@ -10,6 +9,20 @@ from time import time
 N = 10 #how many numbers will be sorted
 
 def mySort(A):
+    swapped = True
+    while swapped:
+        swapped = False
+        for i in range(0,len(A)-1):
+            if A[i] > A[i+1]:
+                A[i], A[i+1] = A[i+1], A[i]
+                swapped = True
+        if not swapped:
+            break
+        swapped = False
+        for i in range(len(A)-2,-1,-1):
+            if A[i] > A[i+1]:
+                A[i], A[i+1] = A[i+1], A[i]
+                swapped = True
     return A
     
 if __name__ == '__main__':
