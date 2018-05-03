@@ -5,7 +5,7 @@
 from random import randint
 from time import time
 
-N = 1000 #how many numbers will be sorted
+N = 10000 #how many numbers will be sorted
 
 def mySort(A):
     if len(A)<= 1:
