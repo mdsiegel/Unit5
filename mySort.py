@@ -17,8 +17,8 @@ def mySort(A):
             left.append(A[i])
         else:
             right.append(A[i])
-    left = merge_sort(left)
-    right = merge_sort(right)
+    left = mySort(left)
+    right = mySort(right)
     return merge(left,right)
 
 def merge(left, right):
