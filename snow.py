@@ -12,11 +12,10 @@ HEIGHT = 670
 def step():
     moreSnow()
     for snow in data['snowList']:
-        if snow.y < HEIGHT - 10:
-            for snow2 in data['snowList']:
-                if snow.x != snow2.x and snow.y != snow2.y:
-                    snow.x += randint(-1,1)
-                    snow.y += randint(1,5)
+        if snow.y < (data['CHeight'])[snow.x]:
+            snow.x += randint(-1,1)
+            snow.y += randint(1,5)
+            
 def moreSnow():
     data['frames'] +=1
     if data['frames']%50 == 0:
@@ -29,6 +28,7 @@ if __name__ == '__main__':
     data = {}
     data['snowList'] = []
     data['frames'] = 0
+    data['CHeight'] = []
     white = Color(0xFFFFFF,1)
     snow = CircleAsset(10,LineStyle(1,black),white)
     
