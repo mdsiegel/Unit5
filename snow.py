@@ -16,7 +16,7 @@ def step():
         snow.y += randint(-1,3)
 def moreSnow():
     data['frames'] +=1
-    if data['frames']%10 == 0:
+    if data['frames']%50 == 0:
         data['snowList'].append(Sprite(snow,(randint(1,WIDTH),randint(1,HEIGHT))))
 
 
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     
     data = {}
     data['snowList'] = []
-    
+    data['frames'] = 0
     white = Color(0xFFFFFF,1)
     snow = CircleAsset(50,LineStyle(1,black),white)
     
