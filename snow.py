@@ -6,14 +6,15 @@ from ggame import *
 from random import randint
 
 
-WIDTH = 1000
-HEIGHT = 600
+WIDTH = 1050
+HEIGHT = 670
 
 def step():
     moreSnow()
     for snow in data['snowList']:
-        snow.x += randint(-1,1)
-        snow.y += randint(1,5)
+        if snow.y < HEIGHT - 10:
+            snow.x += randint(-1,1)
+            snow.y += randint(1,5)
 def moreSnow():
     data['frames'] +=1
     if data['frames']%50 == 0:
