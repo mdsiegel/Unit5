@@ -13,8 +13,10 @@ def step():
     moreSnow()
     for snow in data['snowList']:
         if snow.y < HEIGHT - 10:
-            snow.x += randint(-1,1)
-            snow.y += randint(1,5)
+            for snow2 in data['snowList']:
+                if snow.x != snow2.x and snow.y != snow2.y:
+                    snow.x += randint(-1,1)
+                    snow.y += randint(1,5)
 def moreSnow():
     data['frames'] +=1
     if data['frames']%50 == 0:
