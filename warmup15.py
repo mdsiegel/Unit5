@@ -7,4 +7,4 @@ def double(L):
         L[i] = L[i]*2
     return L
     
-print(double([13,3,5,1,7,5,1,23,54,100]))
+print(double([1,2,3]))
