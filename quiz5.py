@@ -7,7 +7,8 @@ def penultimate(A):
     
 def plusEquals(B,C):
     for number in B:
-        number +=C
+        number += C
+        print(number)
     return B
 
 print(penultimate([3,4,5,6,7]))
