@@ -3,11 +3,11 @@
 #quiz5.py - list quiz
 
 def penultimate(A):
-    return A[-1]
+    return A[-2]
     
 def plusEquals(B,C):
-    for b in B:
-        b +=C
+    for number in B:
+        number +=C
     return B
 
 print(penultimate([3,4,5,6,7]))
