@@ -17,7 +17,9 @@ def smallest(D):
             small = number
     return small
 
+
 print(penultimate([3,4,5,6,7]))
 print(plusEquals([1,2,3,4],10))
-print(smallest([11,2,3,4]))
+print(smallest([1,2,3,4]))
+
 
