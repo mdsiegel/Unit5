@@ -19,14 +19,13 @@ def smallest(D):
     
 def decimalRange(E):
     num1 = E[0]
-    num2 = E[2]
-    step = E[1]
+    num2 = E[1]
+    step = E[2]
     num = num1
     numList = []
-    while num <num2:
-        print(num)
-        num+=step
+    while num < num2:
         numList.append(num)
+        num+=step
     return numList
 
 
