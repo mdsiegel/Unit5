@@ -16,10 +16,23 @@ def smallest(D):
         if number < small:
             small = number
     return small
+    
+def decimalRange(E):
+    num1 = E[0]
+    num2 = E[2]
+    step = E[1]
+    num = num1
+    numList = []
+    while num <num2:
+        print(num)
+        num+=step
+        numList.append(num)
+    return numList
 
 
 print(penultimate([3,4,5,6,7]))
 print(plusEquals([1,2,3,4],10))
 print(smallest([1,2,3,4]))
+print(decimalRange([4,10,.5]))
 
 
